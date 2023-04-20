@@ -1,0 +1,108 @@
+@import "../styles/settings";
+
+.detail {
+  .mainImageRoom {
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .overlay {
+    min-height: 60vh;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: $light;
+      // text-stroke: 1px red;
+    }
+  }
+
+  .box-content {
+    max-width: 767px;
+    margin: auto;
+  }
+
+  .metadatos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+
+    .fa-icons {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+
+      p {
+        margin: 0;
+      }
+
+      svg {
+        color: $primary;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+
+    img {
+      aspect-ratio: 1;
+      width: 49%;
+      object-fit: cover;
+      border: solid 1px $dark;
+    }
+  }
+
+  .booking {
+    border-radius: 1rem;
+    box-shadow: $shadow;
+    width: 100%;
+    max-width: 550px;
+    padding: 1rem;
+    margin: 4rem auto;
+
+    .row {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 1rem;
+    }
+
+    .btn {
+      margin: 1rem;
+    }
+
+    .react-datepicker__close-icon {
+      box-shadow: none;
+
+      &::after {
+        background-color: red;
+      }
+    }
+
+    .input {
+      display: flex;
+      align-items: center;
+      margin: 0 1rem;
+
+       input {
+        margin-left: 1rem;
+        background-color: transparent;
+        padding: 10px 20px;
+        border: solid 1px $color-text;
+        border-radius: 10px;
+        color: $color-text;
+       }
+    }
+  }
+}

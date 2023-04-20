@@ -1,0 +1,182 @@
+@import "./settings";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: $bg-color;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $header-color;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.8rem 4rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: $header-color;
+  background-color: $primary !important;
+  cursor: pointer;
+  transition: $transition;
+  box-shadow: $shadow;
+}
+button:hover {
+  box-shadow: $shadowHover;
+  background-color: $secundary !important;
+  color: $light;
+
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.react-datepicker__close-icon {
+  background-color: transparent !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.section {
+  max-width: $maxWidthContainer;
+  margin: 5rem auto;
+
+  .header-section {
+    max-width: 767px;
+    margin: 2rem auto;
+
+    h2 {
+      span {
+        color: $primary;
+      }
+    }
+
+    p {
+      width: 80%;
+      margin: 1rem auto;
+    }
+  }
+
+  .two-columns {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.circle-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: $light;
+  background-color: $primary;
+  border-radius: 50px;
+}
+
+.box-shadow-hover {
+  box-shadow: $shadow;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: $shadowHover;
+  }
+}
+
+
+/*Estilos del botón de google*/
+.button-sign-google {
+  max-width: 320px;
+  display: flex;
+  margin: auto;
+  padding: 0.5rem 1.4rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  gap: 0.75rem;
+  color: $color-text;
+  background-color: $bg-color !important;
+  cursor: pointer;
+  transition: all .6s ease;
+}
+
+.button-sign-google svg {
+  height: 24px;
+}
+
+.button-sign-google:hover {
+  transform: scale(1.02);
+}
+
+.or {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.icon-star-gold {
+  color: gold;
+}

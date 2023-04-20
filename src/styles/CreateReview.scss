@@ -1,0 +1,33 @@
+@import "../styles/settings";
+
+.form-review {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  box-shadow: $shadow;
+  border-radius: 1rem;
+  padding: 3rem;
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    .errors {
+      min-height: 40px;
+      
+      p {
+        color: rgb(255, 128, 128);
+        margin: 0;
+      }
+    }
+
+    select, textarea {
+      background-color: $bg-color;
+      color: $color-text;
+      padding: 1rem;
+      border: solid 1px $color-text;
+      border-radius: 1rem;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "../styles/settings";
+
+.room {  
+  img {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+  }
+  
+  .txt {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  .metadatos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+
+    .fa-icons {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+
+      p {
+        margin: 0;
+      }
+
+      svg {
+        color: $primary;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+  }  
+}

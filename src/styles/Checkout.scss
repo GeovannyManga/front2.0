@@ -1,0 +1,127 @@
+@import "./settings.scss";
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .header {
+    width: 100%;
+    text-align: left;
+    min-height: 80px;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .detail {
+    width: 65%;
+    text-align: left;
+
+    .title {
+      font-size: 2rem;
+    }
+  }
+
+  .item-room {
+    display: flex;
+    justify-content: space-between;
+    max-width: 767px;
+    gap: 4%;
+    margin-bottom: 2rem;
+    box-shadow: $shadow;
+    border-radius: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      aspect-ratio: 16/9;
+      width: 35%;
+      object-fit: cover;
+      border-radius: 1rem 0 0 1rem;
+    }
+
+    .description {
+      width: 55%;
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        margin: 0;
+        line-height: 1.6rem;
+      }
+    }
+
+    .deleted {
+      width: 6%;
+      background-color: transparent !important;
+      box-shadow: none;
+      color: $font-color;
+    }
+  }
+
+  .txt-container {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+
+    .form-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 2em;
+      text-align: left;
+      color: $light;
+      background-color: $secundary;
+      border: 1px $font-color solid;
+      border-radius: 15px;
+
+      form {
+        width: 100%;
+      }
+
+      h3, h4 {
+        color: $light;
+      }
+
+      button {
+        width: 100%;
+        color: $light;
+      }
+    }
+
+    .cards-image {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .image-checkout {
+      width: 70px;
+    }
+
+    .card-detail-form {
+      display: flex;
+    }
+
+    .total-form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .form-group {
+      background-color: $light;
+      padding: 1rem 0;
+      margin: 1rem 0;
+    }
+  }
+
+  .product-img {
+    width: 70%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+@import './settings';
+
+.card-review {
+  // background-color: $light;
+  padding: 2rem;
+  max-width: 450px;
+  border-radius: 10px;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .card-content {
+    h3, p {
+      text-align: left;
+    }
+  }
+}

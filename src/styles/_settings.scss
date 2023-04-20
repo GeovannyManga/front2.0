@@ -1,0 +1,25 @@
+// Colors
+$primary: #80d3bb;
+$secundary: #3e6157;
+$light: #ffffff;
+$dark: #242424;
+$color-text: #8e8e8e;
+
+// Shadow
+$shadow: 0px 0px 10px 5px #00000015;
+$shadowHover: 3px 3px 15px 10px #0000001f;
+
+// Width containers
+$maxWidthContainer: 1240px;
+
+//Theme
+// $bg-color: $dark;
+$bg-color: $light;
+$header-color: $dark;
+// $header-color: $light;
+$font-color: $color-text;
+
+$font-color-secundary: $primary;
+
+//Transitions
+$transition: all 0.3s ease-in-out;

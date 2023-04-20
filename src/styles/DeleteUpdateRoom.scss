@@ -1,0 +1,45 @@
+@import "../styles/settings";
+
+.cont-gral {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .cont-card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(33.33% - 10px); /* para mostrar tres cards en cada línea */
+    box-sizing: border-box;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; /* evita que se deforme la imagen */
+    }
+
+    .all-btn {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .btn-delete {
+        background-color: rgb(204, 52, 52) !important;
+        color: white;
+        border: 1.4px solid $dark;
+       
+      }
+
+      .btn-update {
+        background-color: $light;
+        color: $dark;
+        border: 1.4px solid $dark;
+
+        
+      }
+    }
+  }
+}

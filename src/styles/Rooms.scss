@@ -1,0 +1,72 @@
+@import "./settings.scss";
+
+.mainImageRooms {
+  width: 100%;
+  height: 40vh;
+  background-image: url("https://res.cloudinary.com/ds8n6d63e/image/upload/v1681423538/Hostel-tayrona/74274b63-61d6fbf1-27_gvlz1i.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.roomsFilters {
+  margin: 5rem 0;
+  box-shadow: $shadow;
+  border-radius: 10px;
+  background-color: $secundary;
+  color: $light;
+  
+  .content-filter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    min-height: 80px;
+  }
+
+  .filterDate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  select, input {
+    background-color: $bg-color;
+    color: $color-text;
+    width: 150px;
+    padding: 0.8rem 1rem;
+    border: solid 1px $color-text;
+    border-radius: 10px;
+  }
+
+  .react-datepicker__close-icon {
+    box-shadow: none;
+  }
+
+  .react-datepicker__close-icon::after {
+    background-color: red;
+  }
+}
+
+.paged {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100px;
+  margin: 5rem 0;
+
+  button {
+    padding: .8rem;
+    border-radius: 50px;
+    width: 3rem;
+    height: 3rem;
+
+    &:hover, &.active {
+      background-color: $secundary !important;
+      color: $light;
+    }
+  }
+}

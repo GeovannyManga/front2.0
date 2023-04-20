@@ -1,0 +1,104 @@
+@import "./settings";
+
+.navbar {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  margin-bottom: -100px;
+  background-color: #0000004d;
+  z-index: 2;
+
+  .container-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $maxWidthContainer;
+    margin: auto;
+  }
+
+  .logo {
+    a {
+      color: $light;
+      font-weight: bold;
+      display: flex;
+      text-align: left;
+    }
+  }
+
+  .items-menu {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      margin-left: 2.5rem;
+      color: $light;
+    }
+  }
+
+  .login {
+    color: $light;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    padding: 1rem;
+
+    &:hover + .dropdown {
+      display: flex;
+    }
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 3.8rem;
+    flex-direction: column;
+    background-color: $bg-color;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: $shadow;
+    
+    a {
+      color: $header-color;
+      margin-left: 0;
+      text-align: left;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      transition: $transition;
+      
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+
+  .dropdown:hover {
+    display: flex;
+  }
+
+  .user-name {
+    color: $light;
+    margin-left: 3rem;
+    margin-right: 1rem;
+  }
+
+  .photo-user {
+    width: 40px;
+    border-radius: 50px;
+  }
+
+  .profile-incognito {
+    background-color: $dark;
+    padding: 10px;
+    color: $light;
+    font-size: 1.5rem;
+    border-radius: 50px;
+  }
+
+  .logout {
+    font-size: 1.5rem;
+  }
+}

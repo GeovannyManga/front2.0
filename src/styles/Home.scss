@@ -1,0 +1,119 @@
+@import "./settings.scss";
+
+.home {
+  overflow: hidden;
+}
+
+.mainImageHome {
+  width: 100%;
+  height: 90vh;
+  background-image: url("https://res.cloudinary.com/ds8n6d63e/image/upload/v1681423538/Hostel-tayrona/74274b63-61d6fbf1-27_gvlz1i.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.home-row-icons-hotels {
+  display: flex;
+  justify-content: center;
+
+  .fa-icons {
+    margin: 1rem 2rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin: 2rem;
+      height: 2rem;
+      color: $primary;
+    }
+  }
+}
+
+.two-columns {
+  .stayHereTxt,
+  .stayHereImg {
+    width: 50%;
+  }
+
+  .stayHereTxt {
+    text-align: left;
+
+    .row-stay-here {
+      width: 80%;
+      margin: 3rem 0;
+
+      h3 {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+.rooms {
+  .header-section {
+    h2,
+    h3 {
+      margin: auto;
+    }
+  }
+}
+
+.about {
+  background-color: $secundary;
+  color: $light;
+
+  .aboutContainer {
+    display: flex;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+
+    .about-content,
+    .about-img {
+      width: 50%;
+    }
+
+    .about-content {
+      text-align: left;
+
+      h2,
+      p {
+        width: 80%;
+        color: $light;
+      }
+
+      h2 {
+        border-bottom: solid;
+        border-color: $primary;
+        width: fit-content;
+      }
+    }
+
+    .about-img {
+      display: flex;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.home-grid-icons-hotels {
+  max-width: 720px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+
+  .fa-icons {
+    width: 275px;
+    text-align: left;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,121 @@
+@import "../styles/settings";
+
+.modal-body {
+
+  padding: 0;
+  border: 2px solid $primary;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: $shadowHover;
+  }
+
+  .title {
+    margin-top: -0.5%;
+    background-color: $secundary;
+    width: 100%;
+    color: $light;
+    margin: 0;
+
+  }
+
+  .label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+  }
+
+  .cont-forms {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+    .input {
+      width: 20rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .textarea {
+    width: 25rem;
+    margin-bottom: 1rem;
+  }
+
+  .price-type{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+ 
+}
+
+  .children{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+  
+    input{
+      width: 5rem;
+
+    }
+  }
+
+  
+.messageError{
+  color: red;
+  font-size: 0.7rem;
+}
+
+
+
+  .field {
+    margin-bottom: 1.5rem;
+   
+
+    .select {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 0.25rem;
+
+      &:focus {
+        outline: none;
+        border-color: $secundary;
+      }
+    }
+
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+
+      input[type="checkbox"] {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .is-grouped {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    .control {
+      width: 48%;
+    }
+  }
+
+  
+
+  .button.is-link.is-light {
+    background-color: rgb(204, 52, 52) !important;
+    color: white;
+    border: 1.4px solid $dark;
+
+    
+  }
+}
